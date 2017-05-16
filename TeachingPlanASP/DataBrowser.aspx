@@ -13,6 +13,10 @@
                     <asp:ListItem>ilość studentów w grupie</asp:ListItem>
                     <asp:ListItem>wykładowcy katedr</asp:ListItem>
                     <asp:ListItem>ilość wykładowców katedr</asp:ListItem>
+                    <asp:ListItem>lista wykładowców grupy</asp:ListItem>
+                    <asp:ListItem>ilość wykładowców grupy</asp:ListItem>
+                    <asp:ListItem>lista katedr</asp:ListItem>
+                    <asp:ListItem>obciążenie wykładowców</asp:ListItem>
                 </asp:DropDownList>
         </div>
 

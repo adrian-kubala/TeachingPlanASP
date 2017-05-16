@@ -74,6 +74,21 @@ namespace TeachingPlanASP.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SELECT Grupa_dziekanska.Id_grupy, COUNT(DISTINCT Nauczyciel.Id_nauczyciela) as Ilosc_nauczycieli
+        ///FROM Nauczyciel, Przedmiot, [PRZEDMIOT-NAUCZYCIEL], [SPECJALNOSC-PRZEDMIOT], Specjalnosc, Kierunek,
+        ///	Wydzial, Grupa_dziekanska
+        ///WHERE Nauczyciel.Id_nauczyciela = [PRZEDMIOT-NAUCZYCIEL].Id_nauczyciela AND
+        ///	[PRZEDMIOT-NAUCZYCIEL].Id_przedmiotu = Przedmiot.Id_przedmiotu AND 
+        ///	[SPECJALNOSC-PRZEDMIOT].Id_przedmiotu = Przedmiot.Id_przedmiotu AND
+        ///	[SPECJALNOSC-PRZEDMIOT].Id_specjalnosci = Specjalnosc.Id_specjalnos [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ilość_wykładowców_grupy {
+            get {
+                return ResourceManager.GetString("ilość_wykładowców_grupy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SELECT Katedra.Nazwa_katedry, COUNT(Nauczyciel.Id_nauczyciela) as Ilosc_nauczycieli_katedry
         ///FROM Katedra, Nauczyciel
         ///WHERE Katedra.Id_katedry = Nauczyciel.Id_katedry AND 
@@ -83,6 +98,21 @@ namespace TeachingPlanASP.Properties {
         internal static string ilość_wykładowców_katedr {
             get {
                 return ResourceManager.GetString("ilość_wykładowców_katedr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT DISTINCT Nazwa_katedry, Przedmiot.Nazwa_przedmiotu, Grupa_dziekanska.Id_grupy, Aktualny_semestr.Id_semestru 
+        ///FROM Katedra, Grupa_dziekanska, Nauczyciel, [PRZEDMIOT-NAUCZYCIEL], [SPECJALNOSC-PRZEDMIOT], Przedmiot,
+        ///	Specjalnosc, Kierunek, Wydzial, Aktualny_semestr
+        ///WHERE Nauczyciel.Id_katedry = Katedra.Id_katedry AND
+        ///	[PRZEDMIOT-NAUCZYCIEL].Id_nauczyciela = Nauczyciel.Id_nauczyciela AND
+        ///	[PRZEDMIOT-NAUCZYCIEL].Id_przedmiotu = Przedmiot.Id_przedmiotu AND
+        ///	[SPECJALNOSC-PRZEDMIOT].Id_przedmiotu = Prz [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string lista_katedr {
+            get {
+                return ResourceManager.GetString("lista_katedr", resourceCulture);
             }
         }
         
@@ -99,6 +129,51 @@ namespace TeachingPlanASP.Properties {
         internal static string lista_studentów_grupy {
             get {
                 return ResourceManager.GetString("lista_studentów_grupy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT DISTINCT Imie_nauczyciela, Nazwisko_nauczyciela, Grupa_dziekanska.Id_grupy
+        ///FROM Nauczyciel, Przedmiot, [PRZEDMIOT-NAUCZYCIEL], [SPECJALNOSC-PRZEDMIOT], Specjalnosc, Kierunek,
+        ///	Wydzial, Grupa_dziekanska
+        ///WHERE Nauczyciel.Id_nauczyciela = [PRZEDMIOT-NAUCZYCIEL].Id_nauczyciela AND
+        ///	[PRZEDMIOT-NAUCZYCIEL].Id_przedmiotu = Przedmiot.Id_przedmiotu AND 
+        ///	[SPECJALNOSC-PRZEDMIOT].Id_przedmiotu = Przedmiot.Id_przedmiotu AND
+        ///	[SPECJALNOSC-PRZEDMIOT].Id_specjalnosci = Specjalnosc.Id_specjalnosci AND
+        ///	Kierun [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string lista_wykładowców_grupy {
+            get {
+                return ResourceManager.GetString("lista_wykładowców_grupy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT Specjalnosc.Nazwa_specjalnosci, Nauczyciel.Imie_nauczyciela, Nauczyciel.Nazwisko_nauczyciela, Aktualny_semestr.Id_semestru, SUM(DISTINCT Przedmiot.Ilosc_godzin) as Obciazenie
+        ///FROM Rodzaj_zajec, Przedmiot, [SPECJALNOSC-PRZEDMIOT], Specjalnosc, Kierunek, Wydzial, Grupa_dziekanska, Aktualny_semestr,
+        ///	[PRZEDMIOT-NAUCZYCIEL], Nauczyciel
+        ///WHERE Rodzaj_zajec.Id_rodzaju_zajec = Przedmiot.Id_rodzaju_zajec AND
+        ///	Przedmiot.Id_przedmiotu = [SPECJALNOSC-PRZEDMIOT].Id_przedmiotu AND
+        ///	[SPECJALNOSC-PRZEDMIOT].Id_ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string obciążenie_wykładowców {
+            get {
+                return ResourceManager.GetString("obciążenie_wykładowców", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT Specjalnosc.Nazwa_specjalnosci, Nauczyciel.Imie_nauczyciela, Nauczyciel.Nazwisko_nauczyciela, 
+        ///	Aktualny_semestr.Id_semestru, SUM(DISTINCT Przedmiot.Ilosc_godzin) as Obciazenie
+        ///FROM Rodzaj_zajec, Przedmiot, [SPECJALNOSC-PRZEDMIOT], Specjalnosc, Kierunek, Wydzial, Grupa_dziekanska, Aktualny_semestr,
+        ///	[PRZEDMIOT-NAUCZYCIEL], Nauczyciel
+        ///WHERE Rodzaj_zajec.Id_rodzaju_zajec = Przedmiot.Id_rodzaju_zajec AND
+        ///	Przedmiot.Id_przedmiotu = [SPECJALNOSC-PRZEDMIOT].Id_przedmiotu AND
+        ///	[SPECJALNOSC-PRZEDMIOT]. [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string obciążenie_wykładowców_dla_TIiIM {
+            get {
+                return ResourceManager.GetString("obciążenie_wykładowców_dla_TIiIM", resourceCulture);
             }
         }
         
