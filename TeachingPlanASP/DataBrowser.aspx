@@ -9,6 +9,10 @@
                 <asp:Label ID="Label1" runat="server" Text="Wyświetl dane:"></asp:Label><br />
                 <asp:DropDownList ID="DropDownList1" runat="server">
                     <asp:ListItem Selected="True">plan kształcenia</asp:ListItem>
+                    <asp:ListItem>lista studentów grupy</asp:ListItem>
+                    <asp:ListItem>ilość studentów w grupie</asp:ListItem>
+                    <asp:ListItem>wykładowcy katedr</asp:ListItem>
+                    <asp:ListItem>ilość wykładowców katedr</asp:ListItem>
                 </asp:DropDownList>
         </div>
 
