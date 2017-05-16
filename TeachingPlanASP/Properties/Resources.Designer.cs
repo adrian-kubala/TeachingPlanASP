@@ -205,6 +205,16 @@ namespace TeachingPlanASP.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap university_icon {
+            get {
+                object obj = ResourceManager.GetObject("university_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SELECT Imie_nauczyciela, Nazwisko_nauczyciela, Nazwa_kategorii, Nazwa_tytulu, Plec_nauczyciela, 
         ///DATEPART(YYYY, Data_urodzenia_nauczyciela) as Rok_urodzenia_nauczyciela, DATEDIFF(YY, Data_urodzenia_nauczyciela, 
         ///GETDATE()) as Wiek_nauczyciela, Obecnosc_dzieci_nauczyciela, Ilosc_dzieci, Pensja_nauczyciela

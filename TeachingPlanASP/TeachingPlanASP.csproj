@@ -191,6 +191,7 @@
     <None Include="Resources\lista_wykładowców_grupy.sql" />
     <None Include="Resources\obciążenie_wykładowców.sql" />
     <None Include="Resources\obciążenie_wykładowców_dla_TIiIM.sql" />
+    <None Include="Resources\university-icon.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
