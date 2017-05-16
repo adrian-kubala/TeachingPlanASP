@@ -1,17 +1,15 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="TeachingPlanASP.Contact" %>
+﻿<%@ Page Title="Kontakt" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="TeachingPlanASP.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
+    <h2><%: Title %></h2>
     <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
+        Adrian Kubała<br />
+        Politechnika Koszalińska<br />
+        Wydział Elektroniki i Informatyki, Informatyka<br />
+        Specjalność: Technologie Internetowe i Mobilne
     </address>
 
     <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+        <strong>Adres mailowy do korespondencji:</strong> <a href="mailto:adrian.kubala@gmail.com">adrian.kubala@gmail.com</a><br />
     </address>
 </asp:Content>
