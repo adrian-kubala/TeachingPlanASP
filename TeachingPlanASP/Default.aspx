@@ -8,4 +8,6 @@
         <p><a href="DataBrowser.aspx" class="btn btn-primary btn-lg">Rozpocznij pracę &raquo;</a></p>
     </div>
 
-    </asp:Content>
+    <asp:Image ID="Image1" runat="server" ImageUrl="~/Resources/university-icon.png" Height="300px" />
+
+</asp:Content>
