@@ -2,6 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
+    <hr />
     <address>
         Adrian Kubała<br />
         Politechnika Koszalińska<br />

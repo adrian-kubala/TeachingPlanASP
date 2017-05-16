@@ -2,7 +2,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
-    <h3>Aplikacja internetowa dla tworzenia planów kształcenia wykonana w technologii ASP.NET</h3>
+    <h4>Aplikacja internetowa dla tworzenia planów kształcenia wykonana w technologii ASP.NET</h4>
+    <hr />
     <p>Projekt służy wykładowcom prowadzącym zajęcia, pracownikom
 administracyjnym dziekanatów uczelni, studentom i jest przeznaczony dla
 tworzenia planów kształcenia różnych specjalności i kierunków danego wydziału.</p>
