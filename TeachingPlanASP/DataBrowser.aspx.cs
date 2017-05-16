@@ -30,5 +30,11 @@ namespace TeachingPlanASP
             GridView1.DataSource = sqlExecutor.Select(queryText);
             GridView1.DataBind();
         }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string underscoredQueryTypeComboBoxText = DropDownList1.SelectedItem.ToString().Replace(" ", "_");
+            FillGridView(Properties.Resources.ResourceManager.GetString(underscoredQueryTypeComboBoxText));
+        }
     }
 }

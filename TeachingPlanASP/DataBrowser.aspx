@@ -7,7 +7,7 @@
     <div class="row">
         <div class="col-md-2">
                 <asp:Label ID="Label1" runat="server" Text="Wyświetl dane:"></asp:Label><br />
-                <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                     <asp:ListItem Selected="True">plan kształcenia</asp:ListItem>
                     <asp:ListItem>lista studentów grupy</asp:ListItem>
                     <asp:ListItem>ilość studentów w grupie</asp:ListItem>
