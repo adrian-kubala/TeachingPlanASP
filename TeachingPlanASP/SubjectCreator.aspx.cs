@@ -9,9 +9,12 @@ namespace TeachingPlanASP
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        private SqlExecutor sqlExecutor = new SqlExecutor();
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
     }
 }

@@ -8,52 +8,52 @@
         <Columns>
             <asp:TemplateField HeaderText="Nazwa_przedmiotu">
                 <ItemTemplate>
-                    <asp:TextBox ID="TextBox1" runat="server" Text=""></asp:TextBox>
+                    <asp:TextBox ID="Nazwa_przedmiotu" runat="server" Text=""></asp:TextBox>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Studia">
                 <ItemTemplate>
-                    <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="Studia" runat="server"></asp:DropDownList>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Tryb_studiow">
                 <ItemTemplate>
-                    <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="Tryb_studiow" runat="server"></asp:DropDownList>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Wykladowca">
                 <ItemTemplate>
-                    <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="Wykladowca" runat="server"></asp:DropDownList>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Specjalnosc">
                 <ItemTemplate>
-                    <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="Specjalnosc" runat="server"></asp:DropDownList>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Grupa_dziekanska">
                 <ItemTemplate>
-                    <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="Grupa_dziekanska" runat="server"></asp:DropDownList>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Ilosc_godzin">
                 <ItemTemplate>
-                    <asp:TextBox ID="TextBox1" runat="server" Text=""></asp:TextBox>
+                    <asp:TextBox ID="Ilosc_godzin" runat="server" Text=""></asp:TextBox>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Numer_semestru">
                 <ItemTemplate>
-                    <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="Numer_semestru" runat="server"></asp:DropDownList>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Tryb_zajec">
                 <ItemTemplate>
-                    <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                    <asp:DropDownList ID="Tryb_zajec" runat="server"></asp:DropDownList>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Punkty_ECTS">
                 <ItemTemplate>
-                    <asp:TextBox ID="TextBox1" runat="server" Text=""></asp:TextBox>
+                    <asp:TextBox ID="Punkty_ECTS" runat="server" Text=""></asp:TextBox>
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>
