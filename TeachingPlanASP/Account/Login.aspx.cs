@@ -50,7 +50,7 @@ namespace TeachingPlanASP.Account
                         break;
                     case SignInStatus.Failure:
                     default:
-                        FailureText.Text = "Invalid login attempt";
+                        FailureText.Text = "Nieprawidłowy login lub hasło";
                         ErrorMessage.Visible = true;
                         break;
                 }
