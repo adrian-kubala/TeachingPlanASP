@@ -5,7 +5,7 @@
     <div class="jumbotron">
         <h1>TeachingPlans</h1>
         <p class="lead">Aplikacja internetowa dla tworzenia planów kształcenia.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Rozpocznij pracę &raquo;</a></p>
+        <p><a href="DataBrowser.aspx" class="btn btn-primary btn-lg">Rozpocznij pracę &raquo;</a></p>
     </div>
 
     </asp:Content>
