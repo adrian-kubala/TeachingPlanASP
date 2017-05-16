@@ -17,7 +17,7 @@
         </div>
 
         <div class="col-md-10" style="overflow: scroll">
-            <asp:GridView ID="GridView1" runat="server">
+            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" OnPageIndexChanging="GridView1_PageIndexChanging" PageSize="8">
             </asp:GridView>
         </div>
     </div>
