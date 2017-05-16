@@ -42,5 +42,10 @@ namespace TeachingPlanASP
             GridView1.PageIndex = e.NewPageIndex;
             DropDownList1_SelectedIndexChanged(null, null);
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/");
+        }
     }
 }
