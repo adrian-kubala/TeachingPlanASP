@@ -4,60 +4,45 @@
     <h2><%: Title %></h2>
     <hr />
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
-        <Columns>
-            <asp:TemplateField HeaderText="Nazwa_przedmiotu">
-                <ItemTemplate>
-                    <asp:TextBox ID="Nazwa_przedmiotu" runat="server" Text=""></asp:TextBox>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Studia">
-                <ItemTemplate>
-                    <asp:DropDownList ID="Studia" runat="server"></asp:DropDownList>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Tryb_studiow">
-                <ItemTemplate>
-                    <asp:DropDownList ID="Tryb_studiow" runat="server"></asp:DropDownList>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Wykladowca">
-                <ItemTemplate>
-                    <asp:DropDownList ID="Wykladowca" runat="server"></asp:DropDownList>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Specjalnosc">
-                <ItemTemplate>
-                    <asp:DropDownList ID="Specjalnosc" runat="server"></asp:DropDownList>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Grupa_dziekanska">
-                <ItemTemplate>
-                    <asp:DropDownList ID="Grupa_dziekanska" runat="server"></asp:DropDownList>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Ilosc_godzin">
-                <ItemTemplate>
-                    <asp:TextBox ID="Ilosc_godzin" runat="server" Text=""></asp:TextBox>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Numer_semestru">
-                <ItemTemplate>
-                    <asp:DropDownList ID="Numer_semestru" runat="server"></asp:DropDownList>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Tryb_zajec">
-                <ItemTemplate>
-                    <asp:DropDownList ID="Tryb_zajec" runat="server"></asp:DropDownList>
-                </ItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Punkty_ECTS">
-                <ItemTemplate>
-                    <asp:TextBox ID="Punkty_ECTS" runat="server" Text=""></asp:TextBox>
-                </ItemTemplate>
-            </asp:TemplateField>
-        </Columns>
-    </asp:GridView>
+    <asp:Label ID="Label1" runat="server" Text="Nazwa przedmiotu"></asp:Label>
+    <asp:TextBox ID="Nazwa_przedmiotu" runat="server" Text=""></asp:TextBox>
+    <br />
+
+    <asp:Label ID="Label2" runat="server" Text="Studia"></asp:Label>
+    <asp:DropDownList ID="Studia" runat="server"></asp:DropDownList>
+    <br />
+
+    <asp:Label ID="Label3" runat="server" Text="Tryb studiów"></asp:Label>
+    <asp:DropDownList ID="Tryb_studiow" runat="server"></asp:DropDownList>
+    <br />
+
+    <asp:Label ID="Label4" runat="server" Text="Wykładowca"></asp:Label>
+    <asp:DropDownList ID="Wykladowca" runat="server"></asp:DropDownList>
+    <br />
+
+    <asp:Label ID="Label5" runat="server" Text="Specjalność"></asp:Label>
+    <asp:DropDownList ID="Specjalnosc" runat="server"></asp:DropDownList>
+    <br />
+
+    <asp:Label ID="Label6" runat="server" Text="Grupa_dziekanska"></asp:Label>
+    <asp:DropDownList ID="Grupa_dziekanska" runat="server"></asp:DropDownList>
+    <br />
+
+    <asp:Label ID="Label7" runat="server" Text="Ilość godzin"></asp:Label>
+    <asp:TextBox ID="Ilosc_godzin" runat="server" Text=""></asp:TextBox>
+    <br />
+
+    <asp:Label ID="Label8" runat="server" Text="Numer semestru"></asp:Label>
+    <asp:DropDownList ID="Numer_semestru" runat="server"></asp:DropDownList>
+    <br />
+
+    <asp:Label ID="Label9" runat="server" Text="Tryb zajeć"></asp:Label>
+    <asp:DropDownList ID="Tryb_zajec" runat="server"></asp:DropDownList>
+    <br />
+
+    <asp:Label ID="Label10" runat="server" Text="Punkty ECTS"></asp:Label>
+    <asp:TextBox ID="Punkty_ECTS" runat="server" Text=""></asp:TextBox>
+    <br />
 
     <asp:Button ID="Button1" runat="server" Text="Zapisz" CssClass="btn btn-primary btn-lg" Style="margin-left: auto; display: block;" />
 </asp:Content>
