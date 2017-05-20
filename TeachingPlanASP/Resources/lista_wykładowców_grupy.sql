@@ -7,5 +7,4 @@ WHERE Nauczyciel.Id_nauczyciela = [PRZEDMIOT-NAUCZYCIEL].Id_nauczyciela AND
 	[SPECJALNOSC-PRZEDMIOT].Id_specjalnosci = Specjalnosc.Id_specjalnosci AND
 	Kierunek.Id_kierunku = Specjalnosc.Id_kierunku AND
 	Wydzial.Id_wydzialu = Kierunek.Id_wydzialu AND
-	Grupa_dziekanska.Id_wydzialu = Wydzial.Id_wydzialu AND
-	Grupa_dziekanska.Id_grupy = 3;
+	Grupa_dziekanska.Id_wydzialu = Wydzial.Id_wydzialu;

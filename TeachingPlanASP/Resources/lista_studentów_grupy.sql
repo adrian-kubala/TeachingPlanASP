@@ -4,5 +4,5 @@ SELECT Grupa_dziekanska.Id_grupy, Imie_studenta, Nazwisko_studenta, Plec_student
 	Obecnosc_dzieci_studenta, Obecnosc_stypendium, Rozmiar_stypendium
 FROM Wydzial, Grupa_dziekanska, Student
 WHERE Student.Id_grupy = Grupa_dziekanska.Id_grupy AND
-	Grupa_dziekanska.Id_wydzialu = Wydzial.Id_wydzialu AND Grupa_dziekanska.Id_grupy = 1
+	Grupa_dziekanska.Id_wydzialu = Wydzial.Id_wydzialu
 	 ORDER BY Nazwisko_studenta;
