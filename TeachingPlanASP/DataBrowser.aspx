@@ -18,6 +18,9 @@
                     <asp:ListItem>lista katedr</asp:ListItem>
                     <asp:ListItem>obciążenie wykładowców</asp:ListItem>
                 </asp:DropDownList>
+            <br />
+            <br />
+            <asp:Button ID="Button1" runat="server" Text="Wprowadź przedmiot" CssClass="btn btn-primary" OnClick="Button1_Click" />
         </div>
 
         <div class="col-md-10" style="overflow: scroll">
